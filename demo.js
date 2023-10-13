@@ -24,7 +24,7 @@ app.post('/post-to-facebook', async (req, res) => {
     try {
         // Make a POST request to Facebook's Graph API to post to your Page
         const response = await axios.post(
-            `https://graph.facebook.com/v12.0/${pageId}/feed`,
+            `https://graph.facebook.com/v18.0/${pageId}/feed`,
             postData
         );
 
